@@ -1,0 +1,49 @@
+Date : 2025-12-30 17:42:47
+Directory : /Users/omarmohamed/bootloader/examples/basic
+Total : 16 files,  381 codes, 26 comments, 83 blanks, all 490 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Rust     |         14 |        325 |         26 |         72 |        423 |
+| Markdown |          2 |         56 |          0 |         11 |         67 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                 | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                    |         16 |        381 |         26 |         83 |        490 |
+| . (Files)                                                                            |          2 |         64 |          6 |         13 |         83 |
+| kernel                                                                               |         13 |        263 |         13 |         61 |        337 |
+| kernel (Files)                                                                       |          1 |          7 |          0 |          3 |         10 |
+| kernel/src                                                                           |         12 |        256 |         13 |         58 |        327 |
+| kernel/src (Files)                                                                   |          4 |        139 |          5 |         32 |        176 |
+| kernel/src/graphics                                                                  |          3 |         25 |          8 |          5 |         38 |
+| kernel/src/interrupts                                                                |          5 |         92 |          0 |         21 |        113 |
+| src                                                                                  |          1 |         54 |          7 |          9 |         70 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                             | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/omarmohamed/bootloader/examples/basic/basic-os.md                             | Markdown |         49 |          0 |          8 |         57 |
+| /Users/omarmohamed/bootloader/examples/basic/build.rs                                | Rust     |         15 |          6 |          5 |         26 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/basic-kernel.md                  | Markdown |          7 |          0 |          3 |         10 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/gdt.rs                       | Rust     |         40 |          0 |         10 |         50 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/graphics/graphics_engine.rs  | Rust     |         23 |          1 |          4 |         28 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/graphics/mod.rs              | Rust     |          2 |          0 |          0 |          2 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/graphics/objects.rs          | Rust     |          0 |          7 |          1 |          8 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/interrupts/cpu_exceptions.rs | Rust     |         13 |          0 |          3 |         16 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/interrupts/interrupts.rs     | Rust     |         47 |          0 |         10 |         57 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/interrupts/keyboard.rs       | Rust     |         16 |          0 |          6 |         22 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/interrupts/mod.rs            | Rust     |          5 |          0 |          0 |          5 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/interrupts/timer.rs          | Rust     |         11 |          0 |          2 |         13 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/lib.rs                       | Rust     |         12 |          0 |          3 |         15 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/main.rs                      | Rust     |         59 |          3 |         15 |         77 |
+| /Users/omarmohamed/bootloader/examples/basic/kernel/src/serial.rs                    | Rust     |         28 |          2 |          4 |         34 |
+| /Users/omarmohamed/bootloader/examples/basic/src/main.rs                             | Rust     |         54 |          7 |          9 |         70 |
+| Total                                                                                |          |        381 |         26 |         83 |        490 |
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

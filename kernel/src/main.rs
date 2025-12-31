@@ -8,7 +8,9 @@ use core::fmt::Write;
 mod graphics; // declares that there is a graphics module
 use crate::graphics::graphics_engine::draw_rect;
 mod interrupts;
+#[macro_use]
 pub mod serial;
+pub mod gdt;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u32)]
@@ -42,9 +44,9 @@ fn kernel_main(boot_info: &'static mut BootInfo) -> ! {
     let fb = boot_info.framebuffer.as_mut().expect("No framebuffer");
     let info = fb.info();
     let buffer = fb.buffer_mut();
+    serial_println!("SERIAL OK: kernel_main reached");
 
-    // kernel::interrupts::interrupts::init_idt();
-    serial_println!("Hello World{}", "!");
+    kernel::init();
 
     // Clear screen (black)
     for byte in buffer.iter_mut() {
