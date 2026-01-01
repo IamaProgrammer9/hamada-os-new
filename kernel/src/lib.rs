@@ -10,15 +10,9 @@ pub fn init() {
     gdt::init();
     interrupts::interrupts::init_idt();
     unsafe {
-        use crate::interrupts::interrupts::PICS;
-
-        PICS.lock().initialize();
-
-        // Unmask timer (IRQ0) and keyboard (IRQ1)
-        PICS.lock().write_masks(
-            0b1111_1100, // master PIC
-            0b1111_1111, // slave PIC
-        );
+        interrupts::interrupts::PICS.lock().initialize();
+        // Unmask ONLY the timer (IRQ0)
+        interrupts::interrupts::PICS.lock().write_masks(0xFE, 0xFF);
     }
     x86_64::instructions::interrupts::enable();
 }

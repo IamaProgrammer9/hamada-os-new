@@ -10,4 +10,5 @@ x86_64 = { version = "0.14", features = ["instructions"] }
 lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
 spin = "0.9"
 pic8259 = "0.10.1"
+pc-keyboard = "0.7.0"
 
